@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>v2rtc Demo</title>
+
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <link rel="icon" href="./logo-16.png">
+        <script src="/node_modules/v2rtc/dist/v2rtc.min.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+            <div>
+                <div>appID:&nbsp;<input id="appID" value="10000"></div>
+                <div>appSecret:&nbsp;<input id="appSecret" value="demoappsecret"></div>
+                <div>服务器地址:&nbsp;<input id="serverAddress" value="rtc.ivage.com"></div>
+                <div>端口号:&nbsp;<input id="serverPort" value="443"></div>
+                <button id="initBtn" onclick="demo.init()">初始化</button>
+            </div>
+
+            <div>&nbsp;</div>
+            <div>
+                <div>房间名称:&nbsp;<input id="roomName" value="会议室1">&nbsp;
+                        <button id="createRoomBtn" onclick="demo.createRoom()">创建房间</button>
+                </div>
+                <button id="getRoomListBtn" onclick="demo.getRoomList()">获取房间列表</button>
+            </div>
+
+            <div>&nbsp;</div>
+            <div>
+                <div>用户名:&nbsp;<input id="userName" value="张三"></div>
+                <button id="loginBtn" onclick="demo.login()">登录</button>
+                <button id="logoutBtn" onclick="demo.logout()" disabled>注销</button>
+            </div> 
+
+            <div>&nbsp;</div>
+            <div>
+                <div>房间ID:&nbsp;<input id="roomID" value="1"></div>
+                <button id="joinRoomBtn" onclick="demo.joinRoom()" disabled>加入房间</button>
+                <button id="leaveRoomBtn" onclick="demo.leaveRoom()" disabled>退出房间</button>
+            </div>
+
+            <div>&nbsp;</div>
+            <div>
+                <div>消息内容:&nbsp;<input id="chatInput" value="你好">&nbsp;
+                    <button id="sendChatBtn" onclick="demo.sendChat()" disabled>发送</button>
+                </div>
+            </div>
+
+            <div>&nbsp;</div>
+                <div id="logContainer">
+            </div>
+
+            <div>&nbsp;</div>
+                <div id="localAudioOutBtns">
+            </div>
+
+            <div>&nbsp;</div>
+                <div id="localAudioInBtns">
+            </div>
+
+            <div>&nbsp;</div>
+                <div id="localVideoBtns">
+            </div>
+
+            <div>&nbsp;</div>
+                <div id="streamViewsContainer">
+            </div>
+
+            <div>&nbsp;</div>
+                <button  id="videoQualityBtn1" onclick="demo.setVideoQuality(1)">流畅</button>
+                <button  id="videoQualityBtn2" onclick="demo.setVideoQuality(2)">标清</button>
+                <button  id="videoQualityBtn3" onclick="demo.setVideoQuality(3)">高清</button>
+                <button  id="videoQualityBtn4" onclick="demo.setVideoQuality(4)">超清</button>
+            </div>
+        </div>
+        
+    </body>
+    <script src="index.js"></script>
+</html>

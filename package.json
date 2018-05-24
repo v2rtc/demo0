@@ -1,0 +1,31 @@
+{
+  "name": "demo0",
+  "version": "1.0.0",
+  "description": "v2rtc sdk demo0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v2rtc/demo0.git"
+  },
+  "keywords": [
+    "v2rtc",
+    "v2sdk",
+    "webrtc",
+    "rtc",
+    "demo0"
+  ],
+  "author": "v2rtc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v2rtc/demo0/issues"
+  },
+  "homepage": "https://github.com/v2rtc/demo0#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "v2rtc": "^1.0.4"
+  }
+}
