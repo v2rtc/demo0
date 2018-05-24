@@ -6,8 +6,10 @@ V2RTC SDK demo0
 ## YARN
 ```yarn```
 
-# 查看
-使用浏览器打开```index.html```查看效果
+# 运行
+```npm start```
+or
+```yarn start```
 
 ## 官方文档
 [ivage官方文档](https://rtc.ivage.com/docs/#/)
