@@ -139,10 +139,10 @@ class Demo {
         const { userID, roomID } = event;
         this.logInfo(`notify: ${userID}退出房间: ${roomID}`);
     }
-    async onJoinRoomComplete(event) {
+    async onJoinRoomComplete(/*event*/) {
         this.logInfo('入会完成');
     }
-    async onDeviceChange(event) {
+    async onDeviceChange(/*event*/) {
         await this.enumLocalDevices();
     }
     async onStreamsPublished(event) {
@@ -497,5 +497,3 @@ class Demo {
         }
     }
 }
-
-const demo = new Demo();
