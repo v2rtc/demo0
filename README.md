@@ -1,15 +1,21 @@
 V2RTC SDK demo0
 ======
-# 安装 Install
-## NPM
-```npm i```
-## YARN
-```yarn```
+# 安装 Installation
+## 使用 npm:
+    $ npm i
+## 使用 yarn:
+    $ yarn
 
-# 运行
-```npm start```
-or
-```yarn start```
+# 运行 run
+    $ npm start
 
-## 官方文档
-[ivage官方文档](https://rtc.ivage.com/docs/#/)
+    or
+
+    $ yarn start
+
+# 官方文档
+更多信息,请访问我们的官方文档 [ivage官方文档](https://rtc.ivage.com/docs/#/)
+
+# 使用示例
+[demo0](https://github.com/v2rtc/demo0.git)
+
