@@ -15,7 +15,3 @@ V2RTC SDK demo0
 
 # 官方文档
 更多信息,请访问我们的官方文档 [ivage官方文档](https://rtc.ivage.com/docs/#/)
-
-# 使用示例
-[demo0](https://github.com/v2rtc/demo0.git)
-
