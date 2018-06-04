@@ -1,6 +1,6 @@
 class Demo {
     constructor() {
-        this.v2sdk = new V2RTC.V2SDK();
+        this.v2sdk = V2RTC.v2sdk;
         this.myBrowser();
         this.myDeviceStreamsMap = new Map();
         this.currentVideoQuality = 1;
@@ -79,10 +79,11 @@ class Demo {
         this.v2sdk.onLocalStreamKicked = this.onLocalStreamKicked.bind(this);
         this.v2sdk.onLocalStreamEnded = this.onLocalStreamEnded.bind(this);
         this.v2sdk.onRecvMessage = this.onRecvMessage.bind(this);
-        this.v2sdk.onAddRoomDatas = this.onAddRoomDatas.bind(this);
-        this.v2sdk.onModifyRoomDataByID = this.onModifyRoomDataByID.bind(this);
-        this.v2sdk.onDeleteRoomDataByID = this.onDeleteRoomDataByID.bind(this);
-        this.v2sdk.onDeleteRoomDataByType = this.onDeleteRoomDataByType.bind(this);
+        
+        // this.v2sdk.onAddRoomDatas = this.onAddRoomDatas.bind(this);
+        // this.v2sdk.onModifyRoomDataByID = this.onModifyRoomDataByID.bind(this);
+        // this.v2sdk.onDeleteRoomDataByID = this.onDeleteRoomDataByID.bind(this);
+        // this.v2sdk.onDeleteRoomDataByType = this.onDeleteRoomDataByType.bind(this);
     }
     logInfo(text) {
         const now = new Date();
@@ -185,18 +186,18 @@ class Demo {
             }
         }
     }
-    async onAddRoomDatas(event) {
-        console.log(event);
-    }
-    async onModifyRoomDataByID(event) {
-        console.log(event);
-    }
-    async onDeleteRoomDataByID(event) {
-        console.log(event);
-    }
-    async onDeleteRoomDataByType(event) {
-        console.log(event);
-    }
+    // async onAddRoomDatas(event) {
+    //     console.log(event);
+    // }
+    // async onModifyRoomDataByID(event) {
+    //     console.log(event);
+    // }
+    // async onDeleteRoomDataByID(event) {
+    //     console.log(event);
+    // }
+    // async onDeleteRoomDataByType(event) {
+    //     console.log(event);
+    // }
     async onServerDisconnected(event) {
         console.log('服务器连接已断开:', event);
     }

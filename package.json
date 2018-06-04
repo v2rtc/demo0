@@ -26,6 +26,6 @@
   "homepage": "https://github.com/v2rtc/demo0#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "v2rtc": "^1.0.4"
+    "v2rtc": "^1.0.8"
   }
 }
